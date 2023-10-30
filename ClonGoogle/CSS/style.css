@@ -1,0 +1,228 @@
+:root {
+    --primary-color: #202124;
+    --secondary-color: #171717;
+    --text-color: #e8eaed;
+
+    --border-color: #ffffff;
+
+    --background-button: #303134;
+    --box-shadow-button: 0 3px 3px 0 rgba(90, 90, 90, 0.5);
+    --border-button: 1px solid #5f6368;
+    --color-button: #e8eaed;
+
+    --background-h-button: #303134;
+    --box-shadow-h-button: 0 1px 6px 0 #171717;
+    --border-color-h-button: rgba(223, 225, 229, 0);
+
+    --sm: 13px;
+    --md: 14px;
+    --lg: 3.5rem;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'PT Sans', sans-serif;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header starts here */
+
+header {
+    background-color: var(--Primary-color);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav .nav-right-section {
+    margin-right: 10px;
+    width: 250px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+
+}
+
+nav .nav-right-section a {
+    font-size: var(--sm);
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url('../Assets/Toggle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+.profile-icon {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-right-section img {
+    width: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* main starts here */
+
+main {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.main-logo {
+    width: 530px;
+    margin: 0 auto;
+}
+
+.main-logo img {
+    margin: 20px;
+    width: 272px;
+}
+
+.main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+.main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: var(--border-button);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-input-container:hover {
+    background-color: var(--background-h-button);
+    box-shadow: var(--box-shadow-h-button);
+    border-color: var(--border-color-h-button);
+}
+
+.main-input-container input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.search-icon {
+    background-image: url(../Assets/Lupa.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: white;
+    height: 20px;
+    width: 20px;
+    padding-left: 15px;
+}
+
+.micro-icon {
+    background-image: url(../Assets/Microphone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: var(--background-button);
+    height: 20px;
+    width: 20px;
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    height: 36px;
+    background-color: var(--background-button);
+    border: 1px solid var(--border-button);
+    font-size: var(--md);
+    color: var(--color-button);
+    border-radius: 5px;
+    padding: 0 15px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+main .main-buttons button:hover {
+    background-color: var(--background-h-button);
+    box-shadow: var(--box-shadow-h-button);
+    border: var(--border-button);
+}
+
+/* Footer starts here */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    font-size: var(--md);
+    background-color: var(--secondary-color);
+}
+
+.country {
+    height: 40px;
+    border-bottom: 1px solid #3c4043;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.country a {
+    font-size: var(--md);
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.others {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font: var(--md);
+}
+
+.others ul {
+    margin: 0 20px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+.others a {
+    font-size: var(--md);
+    color: var(--text-color);
+    margin: 0 10px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+footer .footer-left {
+     justify-self: left;
+}
+footer .footer-right {
+     justify-self: right;
+}
